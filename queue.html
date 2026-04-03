@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack Data Structure Visualizer</title>
+    <title>Queue Data Structure Visualizer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="queue.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
@@ -11,19 +11,19 @@
 <body>
     <div class="container">
         <nav class="nav-tab">
-            <a href="index.html" class="nav-btn active">Stack</a>
-            <a href="queue.html" class="nav-btn">Queue</a>
+            <a href="index.html" class="nav-btn">Stack</a>
+            <a href="queue.html" class="nav-btn active">Queue</a>
             <a href="circular-queue.html" class="nav-btn">Circular Queue</a>
         </nav>
         
         <header>
-            <h1>Stack Visualizer</h1>
-            <p>Last In, First Out (LIFO) Principle</p>
+            <h1>Queue Visualizer</h1>
+            <p>First In, First Out (FIFO) Principle</p>
         </header>
 
         <div class="theory-box">
-            <h3>📖 What is a Stack?</h3>
-            <p>A Stack is a linear data structure that follows the <strong>LIFO (Last-In, First-Out)</strong> principle. Think of it like a stack of plates: you can only add a new plate to the top (<strong>Push</strong>) and only remove the top-most plate (<strong>Pop</strong>). The <strong>Peek</strong> operation lets you view the top item without removing it. The <strong>Top Index</strong> always points to the most recently added item, starting at <strong>-1</strong> when empty.</p>
+            <h3>📖 What is a Queue?</h3>
+            <p>A Queue is a linear data structure that follows the <strong>FIFO (First-In, First-Out)</strong> principle. Think of it like a line of people waiting: the first person to join the line is the first one served (<strong>Dequeue</strong>), and new people join at the back of the line (<strong>Enqueue</strong>). The <strong>Front</strong> index tracks the element to be removed, while the <strong>Rear</strong> index tracks the last added element.</p>
         </div>
 
         <main>
@@ -35,17 +35,17 @@
 
                 <div class="input-group">
                     <input type="text" id="item-input" placeholder="Enter a value..." autocomplete="off">
-                    <button id="push-btn" class="btn primary">Push</button>
+                    <button id="enqueue-btn" class="btn primary">Enqueue</button>
                 </div>
                 
                 <div class="action-buttons">
-                    <button id="pop-btn" class="btn danger">Pop</button>
-                    <button id="peek-btn" class="btn secondary">Peek</button>
+                    <button id="dequeue-btn" class="btn danger">Dequeue</button>
+                    <button id="peek-btn" class="btn secondary">Front</button>
                     <button id="clear-btn" class="btn outline">Clear</button>
                 </div>
                 
                 <div class="message-box" id="message-box">
-                    Welcome! Stack is conceptually empty.
+                    Welcome! Queue is conceptually empty.
                 </div>
                 
                 <div class="info-panel">
@@ -54,8 +54,12 @@
                         <span id="max-info" class="value">3</span>
                     </div>
                     <div class="info-item">
-                        <span class="label">TOP (Index):</span>
-                        <span id="top-index" class="value">-1</span>
+                        <span class="label">FRONT:</span>
+                        <span id="front-index" class="value">-1</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">REAR:</span>
+                        <span id="rear-index" class="value">-1</span>
                     </div>
                     <div class="info-item">
                         <span class="label">Status:</span>
@@ -64,14 +68,11 @@
                 </div>
             </div>
 
-            <div class="stack-display">
-                <div class="stack-wrapper">
+            <div class="queue-display">
+                <div class="queue-wrapper">
                     <!-- The items container -->
-                    <div class="stack-container" id="stack-container">
-                        <!-- Stack compartments will be dynamically injected here -->
-                    </div>
-                    <div class="stack-base">
-                        <span>Stack Base</span>
+                    <div class="queue-container" id="queue-container">
+                        <!-- Queue compartments will be dynamically injected here -->
                     </div>
                 </div>
             </div>
@@ -82,6 +83,6 @@
         </footer>
     </div>
     
-    <script src="script.js"></script>
+    <script src="queue.js"></script>
 </body>
 </html>

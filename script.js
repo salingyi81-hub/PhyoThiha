@@ -1,7 +1,7 @@
 class Stack {
     constructor() {
         this.items = [];
-        this.maxSize = 10; // Visual limit default
+        this.maxSize = 3; // Visual limit default
     }
 
     push(element) {
