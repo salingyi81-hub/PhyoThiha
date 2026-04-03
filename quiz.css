@@ -47,6 +47,23 @@
     margin-bottom: 2rem;
 }
 
+.question-section pre {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: left;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-section code {
+    color: #a8ffb5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .option-btn {
     width: 100%;
     text-align: left;
