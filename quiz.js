@@ -1,1511 +1,1819 @@
 const questions = [
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(24)\nS.push(51)\nS.push(29)\nS.push(81)</code></pre>",
-        "options": [
-            "22",
-            "81",
-            "59",
-            "42"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(73)\nS.push(70)\nS.pop()\nS.pop()</code></pre>",
-        "options": [
-            "Error",
-            "Undefined",
-            "10",
-            "Empty"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(72)\nS.push(81)\nS.push(70)\nS.push(16)</code></pre>",
-        "options": [
-            "58",
-            "18",
-            "16",
-            "76"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(87)\nS.pop()\nS.push(78)\nS.push(73)</code></pre>",
-        "options": [
-            "73",
-            "76",
-            "23",
-            "55"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(30)\nS.push(77)\nS.push(31)\nS.push(24)</code></pre>",
-        "options": [
-            "93",
-            "62",
-            "17",
-            "24"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(53)\nS.pop()\nS.push(13)\nS.push(11)</code></pre>",
-        "options": [
-            "11",
-            "24",
-            "23",
-            "40"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(77)</code></pre>",
-        "options": [
-            "11",
-            "77",
-            "71",
-            "70"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(34)\nS.push(74)\nS.push(56)\nS.push(96)</code></pre>",
-        "options": [
-            "72",
-            "18",
-            "61",
-            "96"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(59)\nS.push(61)\nS.push(25)\nS.push(54)</code></pre>",
-        "options": [
-            "29",
-            "28",
-            "54",
-            "69"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(43)\nS.push(38)\nS.push(47)\nS.pop()</code></pre>",
-        "options": [
-            "33",
-            "71",
-            "77",
-            "38"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(92)\nS.pop()\nS.push(14)</code></pre>",
-        "options": [
-            "89",
-            "33",
-            "14",
-            "53"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(20)\nS.push(14)</code></pre>",
-        "options": [
-            "58",
-            "56",
-            "94",
-            "14"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(60)\nS.push(47)\nS.push(26)\nS.pop()</code></pre>",
-        "options": [
-            "88",
-            "64",
-            "60",
-            "47"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(49)\nS.pop()</code></pre>",
-        "options": [
-            "Error",
-            "Empty",
-            "Undefined",
-            "10"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(81)\nS.push(76)\nS.push(31)</code></pre>",
-        "options": [
-            "91",
-            "31",
-            "93",
-            "52"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(22)\nS.push(66)\nS.push(98)\nS.push(11)</code></pre>",
-        "options": [
-            "93",
-            "11",
-            "76",
-            "38"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(75)\nS.push(38)\nS.pop()\nS.push(92)</code></pre>",
-        "options": [
-            "24",
-            "92",
-            "43",
-            "98"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(36)\nS.push(66)\nS.pop()</code></pre>",
-        "options": [
-            "94",
-            "36",
-            "31",
-            "89"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(11)\nS.pop()\nS.push(81)</code></pre>",
-        "options": [
-            "81",
-            "45",
-            "63",
-            "84"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Stack <code>S</code>, what is the top element after the following operations?\n<pre><code>S.push(12)\nS.push(69)\nS.push(26)\nS.push(27)</code></pre>",
-        "options": [
-            "27",
-            "90",
-            "36",
-            "93"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>return top == -1</code></pre>",
-        "options": [
-            "Pop",
-            "Push",
-            "IsFull",
-            "IsEmpty"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>return top == -1</code></pre>",
-        "options": [
-            "IsEmpty",
-            "IsFull",
-            "Peek",
-            "Pop"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>return top == -1</code></pre>",
-        "options": [
-            "Pop",
-            "Push",
-            "Peek",
-            "IsEmpty"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>return top == MAX - 1</code></pre>",
-        "options": [
-            "Peek",
-            "Push",
-            "IsFull",
-            "IsEmpty"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>return top == MAX - 1</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Pop",
-            "IsFull",
-            "Peek"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>return top == MAX - 1</code></pre>",
-        "options": [
-            "Push",
-            "IsEmpty",
-            "IsFull",
-            "Pop"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == -1:\n  return null\nelse:\n  return stack[top]</code></pre>",
-        "options": [
-            "IsFull",
-            "Peek",
-            "IsEmpty",
-            "Push"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == -1:\n  return null\nelse:\n  return stack[top]</code></pre>",
-        "options": [
-            "Pop",
-            "IsEmpty",
-            "Peek",
-            "IsFull"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == -1:\n  return null\nelse:\n  return stack[top]</code></pre>",
-        "options": [
-            "Pop",
-            "Push",
-            "Peek",
-            "IsFull"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == -1:\n  print 'Underflow'\nelse:\n  value = stack[top]\n  top = top - 1\n  return value</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Push",
-            "Pop",
-            "Peek"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == -1:\n  print 'Underflow'\nelse:\n  value = stack[top]\n  top = top - 1\n  return value</code></pre>",
-        "options": [
-            "Peek",
-            "Pop",
-            "IsFull",
-            "IsEmpty"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == -1:\n  print 'Underflow'\nelse:\n  value = stack[top]\n  top = top - 1\n  return value</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Pop",
-            "Push",
-            "Peek"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == MAX - 1:\n  print 'Overflow'\nelse:\n  top = top + 1\n  stack[top] = value</code></pre>",
-        "options": [
-            "Peek",
-            "Push",
-            "IsEmpty",
-            "IsFull"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == MAX - 1:\n  print 'Overflow'\nelse:\n  top = top + 1\n  stack[top] = value</code></pre>",
-        "options": [
-            "Pop",
-            "Push",
-            "Peek",
-            "IsEmpty"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Stack operation does the following pseudocode represent?\n<pre><code>if top == MAX - 1:\n  print 'Overflow'\nelse:\n  top = top + 1\n  stack[top] = value</code></pre>",
-        "options": [
-            "Pop",
-            "Peek",
-            "Push",
-            "IsFull"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "How does a compiler typically manage function calls and local variables?",
-        "options": [
-            "Memory Leak",
-            "CPU Scheduling",
-            "Function Call Management",
-            "Underflow"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "How does a compiler typically manage function calls and local variables?",
-        "options": [
-            "Function Call Management",
-            "Enqueue",
-            "Front",
-            "Memory Leak"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "What principle does a Stack data structure follow?",
-        "options": [
-            "Queue",
-            "LIFO (Last-In, First-Out)",
-            "CPU Scheduling",
-            "FIFO (First-In, First-Out)"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What principle does a Stack data structure follow?",
-        "options": [
-            "Enqueue",
-            "Dequeue",
-            "LIFO (Last-In, First-Out)",
-            "Queue"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "What error occurs when trying to Push to a full Stack?",
-        "options": [
-            "Enqueue",
-            "Front",
-            "CPU Scheduling",
-            "Overflow"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "What error occurs when trying to Push to a full Stack?",
-        "options": [
-            "Queue",
-            "CPU Scheduling",
-            "Overflow",
-            "Underflow"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which operation removes an element from the top of a Stack?",
-        "options": [
-            "FIFO (First-In, First-Out)",
-            "Pop",
-            "Queue",
-            "CPU Scheduling"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which operation removes an element from the top of a Stack?",
-        "options": [
-            "Overflow",
-            "CPU Scheduling",
-            "Pop",
-            "Enqueue"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which operation adds an element to the top of a Stack?",
-        "options": [
-            "Push",
-            "Enqueue",
-            "Underflow",
-            "Overflow"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which operation adds an element to the top of a Stack?",
-        "options": [
-            "CPU Scheduling",
-            "Overflow",
-            "Push",
-            "Dequeue"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "What is the name of the pointer that tracks the uppermost element in a Stack?",
-        "options": [
-            "Top",
-            "Queue",
-            "Overflow",
-            "Front"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "What is the name of the pointer that tracks the uppermost element in a Stack?",
-        "options": [
-            "Overflow",
-            "Top",
-            "Rear",
-            "Enqueue"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What error occurs when trying to Pop from an empty Stack?",
-        "options": [
-            "Rear",
-            "Underflow",
-            "Front",
-            "Memory Leak"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What error occurs when trying to Pop from an empty Stack?",
-        "options": [
-            "CPU Scheduling",
-            "Enqueue",
-            "Memory Leak",
-            "Underflow"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which of the following is a common real-world application of a Stack?",
-        "options": [
-            "CPU Scheduling",
-            "Memory Leak",
-            "Overflow",
-            "Undo mechanism in text editors"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(52)\nQ.enqueue(86)\nQ.enqueue(66)\nQ.dequeue()</code></pre>",
-        "options": [
-            "86",
-            "63",
-            "52",
-            "55"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(32)\nQ.enqueue(28)\nQ.dequeue()\nQ.enqueue(69)</code></pre>",
-        "options": [
-            "28",
-            "83",
-            "11",
-            "30"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(19)\nQ.dequeue()\nQ.enqueue(21)</code></pre>",
-        "options": [
-            "56",
-            "85",
-            "84",
-            "21"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(98)\nQ.dequeue()\nQ.enqueue(15)\nQ.dequeue()</code></pre>",
-        "options": [
-            "Undefined",
-            "Empty",
-            "10",
-            "Error"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(53)</code></pre>",
-        "options": [
-            "58",
-            "72",
-            "53",
-            "15"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(37)\nQ.enqueue(70)\nQ.dequeue()</code></pre>",
-        "options": [
-            "32",
-            "86",
-            "77",
-            "70"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(13)\nQ.dequeue()</code></pre>",
-        "options": [
-            "Empty",
-            "10",
-            "Undefined",
-            "Error"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(98)\nQ.enqueue(48)\nQ.dequeue()\nQ.enqueue(56)</code></pre>",
-        "options": [
-            "54",
-            "88",
-            "48",
-            "47"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(50)\nQ.enqueue(74)\nQ.enqueue(63)\nQ.enqueue(92)</code></pre>",
-        "options": [
-            "62",
-            "60",
-            "50",
-            "67"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(59)\nQ.enqueue(33)\nQ.enqueue(28)\nQ.enqueue(57)</code></pre>",
-        "options": [
-            "59",
-            "74",
-            "97",
-            "62"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(21)\nQ.enqueue(88)\nQ.dequeue()\nQ.enqueue(41)</code></pre>",
-        "options": [
-            "15",
-            "86",
-            "19",
-            "88"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(97)\nQ.enqueue(28)\nQ.dequeue()</code></pre>",
-        "options": [
-            "41",
-            "16",
-            "28",
-            "26"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(30)\nQ.enqueue(97)\nQ.enqueue(61)\nQ.dequeue()</code></pre>",
-        "options": [
-            "38",
-            "55",
-            "15",
-            "97"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(61)\nQ.enqueue(97)\nQ.dequeue()\nQ.dequeue()</code></pre>",
-        "options": [
-            "Undefined",
-            "10",
-            "Error",
-            "Empty"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(82)\nQ.dequeue()\nQ.enqueue(45)\nQ.dequeue()</code></pre>",
-        "options": [
-            "Error",
-            "10",
-            "Undefined",
-            "Empty"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(75)\nQ.enqueue(95)\nQ.dequeue()\nQ.enqueue(53)</code></pre>",
-        "options": [
-            "28",
-            "44",
-            "92",
-            "95"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(69)\nQ.dequeue()\nQ.enqueue(52)</code></pre>",
-        "options": [
-            "74",
-            "24",
-            "47",
-            "52"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(11)\nQ.enqueue(73)\nQ.enqueue(52)\nQ.dequeue()</code></pre>",
-        "options": [
-            "92",
-            "89",
-            "28",
-            "73"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(89)\nQ.enqueue(21)</code></pre>",
-        "options": [
-            "18",
-            "89",
-            "84",
-            "96"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Queue <code>Q</code>, what is the front element after the following operations?\n<pre><code>Q.enqueue(50)\nQ.dequeue()</code></pre>",
-        "options": [
-            "Undefined",
-            "Error",
-            "10",
-            "Empty"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if front == -1 or front > rear:\n  print 'Underflow'\nelse:\n  value = queue[front]\n  front = front + 1\n  return value</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Dequeue",
-            "Peek",
-            "IsFull"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if front == -1 or front > rear:\n  print 'Underflow'\nelse:\n  value = queue[front]\n  front = front + 1\n  return value</code></pre>",
-        "options": [
-            "Dequeue",
-            "IsFull",
-            "Peek",
-            "Enqueue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if front == -1 or front > rear:\n  print 'Underflow'\nelse:\n  value = queue[front]\n  front = front + 1\n  return value</code></pre>",
-        "options": [
-            "Dequeue",
-            "Enqueue",
-            "IsEmpty",
-            "Peek"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if rear == MAX - 1:\n  print 'Overflow'\nelse:\n  if front == -1: front = 0\n  rear = rear + 1\n  queue[rear] = value</code></pre>",
-        "options": [
-            "Dequeue",
-            "Peek",
-            "Enqueue",
-            "IsEmpty"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if rear == MAX - 1:\n  print 'Overflow'\nelse:\n  if front == -1: front = 0\n  rear = rear + 1\n  queue[rear] = value</code></pre>",
-        "options": [
-            "Enqueue",
-            "IsFull",
-            "Peek",
-            "Dequeue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if rear == MAX - 1:\n  print 'Overflow'\nelse:\n  if front == -1: front = 0\n  rear = rear + 1\n  queue[rear] = value</code></pre>",
-        "options": [
-            "Dequeue",
-            "Enqueue",
-            "Peek",
-            "IsEmpty"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>return front == -1 or front > rear</code></pre>",
-        "options": [
-            "Enqueue",
-            "Peek",
-            "Dequeue",
-            "IsEmpty"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>return front == -1 or front > rear</code></pre>",
-        "options": [
-            "Dequeue",
-            "IsFull",
-            "IsEmpty",
-            "Peek"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>return front == -1 or front > rear</code></pre>",
-        "options": [
-            "Dequeue",
-            "IsFull",
-            "IsEmpty",
-            "Peek"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>return rear == MAX - 1</code></pre>",
-        "options": [
-            "Dequeue",
-            "IsFull",
-            "IsEmpty",
-            "Peek"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>return rear == MAX - 1</code></pre>",
-        "options": [
-            "Peek",
-            "IsFull",
-            "IsEmpty",
-            "Enqueue"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>return rear == MAX - 1</code></pre>",
-        "options": [
-            "IsFull",
-            "IsEmpty",
-            "Peek",
-            "Enqueue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if front == -1 or front > rear:\n  return null\nelse:\n  return queue[front]</code></pre>",
-        "options": [
-            "Peek",
-            "Dequeue",
-            "Enqueue",
-            "IsEmpty"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if front == -1 or front > rear:\n  return null\nelse:\n  return queue[front]</code></pre>",
-        "options": [
-            "Peek",
-            "IsFull",
-            "IsEmpty",
-            "Enqueue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Queue operation does the following pseudocode represent?\n<pre><code>if front == -1 or front > rear:\n  return null\nelse:\n  return queue[front]</code></pre>",
-        "options": [
-            "Dequeue",
-            "Peek",
-            "Enqueue",
-            "IsFull"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which operation removes an element from the front of a Queue?",
-        "options": [
-            "LIFO (Last-In, First-Out)",
-            "Pop",
-            "Dequeue",
-            "Stack"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which operation removes an element from the front of a Queue?",
-        "options": [
-            "Undo feature",
-            "Dequeue",
-            "Top",
-            "Pop"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which operation removes an element from the front of a Queue?",
-        "options": [
-            "LIFO (Last-In, First-Out)",
-            "Dequeue",
-            "Push",
-            "Stack"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which operation adds an element to the back of a Queue?",
-        "options": [
-            "Top",
-            "Undo feature",
-            "Enqueue",
-            "LIFO (Last-In, First-Out)"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which operation adds an element to the back of a Queue?",
-        "options": [
-            "Enqueue",
-            "Undo feature",
-            "Top",
-            "LIFO (Last-In, First-Out)"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which operation adds an element to the back of a Queue?",
-        "options": [
-            "Browser History",
-            "Enqueue",
-            "LIFO (Last-In, First-Out)",
-            "Undo feature"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What principle does a Queue data structure follow?",
-        "options": [
-            "Stack",
-            "Push",
-            "FIFO (First-In, First-Out)",
-            "Top"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "What principle does a Queue data structure follow?",
-        "options": [
-            "Stack",
-            "Pop",
-            "Top",
-            "FIFO (First-In, First-Out)"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "What principle does a Queue data structure follow?",
-        "options": [
-            "LIFO (Last-In, First-Out)",
-            "FIFO (First-In, First-Out)",
-            "Undo feature",
-            "Top"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is the name of the pointer that tracks the first element to be removed in a Queue?",
-        "options": [
-            "Top",
-            "LIFO (Last-In, First-Out)",
-            "Front",
-            "Push"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "What is the name of the pointer that tracks the first element to be removed in a Queue?",
-        "options": [
-            "Push",
-            "Front",
-            "Top",
-            "LIFO (Last-In, First-Out)"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is the name of the pointer that tracks the first element to be removed in a Queue?",
-        "options": [
-            "LIFO (Last-In, First-Out)",
-            "Browser History",
-            "Top",
-            "Front"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which scenario is best modeled by a Queue?",
-        "options": [
-            "Print Spooling",
-            "Browser History",
-            "Pop",
-            "Undo feature"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which scenario is best modeled by a Queue?",
-        "options": [
-            "Push",
-            "Undo feature",
-            "Browser History",
-            "Print Spooling"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which scenario is best modeled by a Queue?",
-        "options": [
-            "Pop",
-            "Print Spooling",
-            "Stack",
-            "Undo feature"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(75)\nCQ.enqueue(77)\nCQ.dequeue()\nCQ.enqueue(33)</code></pre>",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "0"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 3, how many elements are in it after these operations?\n<pre><code>MAX = 3\nCQ.enqueue(50)\nCQ.dequeue()\nCQ.enqueue(90)\nCQ.enqueue(57)\nCQ.enqueue(37)</code></pre>",
-        "options": [
-            "1",
-            "2",
-            "0",
-            "3"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 4, how many elements are in it after these operations?\n<pre><code>MAX = 4</code></pre>",
-        "options": [
-            "0",
-            "Undefined",
-            "Empty",
-            "Error"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 3, how many elements are in it after these operations?\n<pre><code>MAX = 3\nCQ.enqueue(72)\nCQ.enqueue(44)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "2",
-            "1",
-            "0",
-            "3"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(70)\nCQ.dequeue()\nCQ.enqueue(46)</code></pre>",
-        "options": [
-            "1",
-            "2",
-            "0",
-            "3"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 3, how many elements are in it after these operations?\n<pre><code>MAX = 3\nCQ.enqueue(57)\nCQ.enqueue(45)\nCQ.enqueue(99)</code></pre>",
-        "options": [
-            "1",
-            "3",
-            "0",
-            "2"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 4, how many elements are in it after these operations?\n<pre><code>MAX = 4\nCQ.enqueue(70)\nCQ.enqueue(77)</code></pre>",
-        "options": [
-            "0",
-            "2",
-            "3",
-            "1"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(79)\nCQ.dequeue()\nCQ.enqueue(46)\nCQ.enqueue(73)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "2",
-            "0",
-            "3",
-            "1"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(36)\nCQ.enqueue(33)\nCQ.dequeue()\nCQ.dequeue()\nCQ.enqueue(10)</code></pre>",
-        "options": [
-            "3",
-            "0",
-            "2",
-            "1"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(64)\nCQ.dequeue()\nCQ.enqueue(92)\nCQ.enqueue(41)\nCQ.enqueue(75)</code></pre>",
-        "options": [
-            "3",
-            "1",
-            "0",
-            "2"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(60)\nCQ.dequeue()\nCQ.enqueue(23)\nCQ.dequeue()\nCQ.enqueue(77)</code></pre>",
-        "options": [
-            "0",
-            "3",
-            "2",
-            "1"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(14)\nCQ.enqueue(88)\nCQ.enqueue(86)\nCQ.enqueue(54)\nCQ.enqueue(79)</code></pre>",
-        "options": [
-            "1",
-            "0",
-            "5",
-            "2"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(80)\nCQ.dequeue()\nCQ.enqueue(75)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "0",
-            "Error",
-            "Empty",
-            "Undefined"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 4, how many elements are in it after these operations?\n<pre><code>MAX = 4\nCQ.enqueue(95)\nCQ.enqueue(78)\nCQ.dequeue()\nCQ.enqueue(83)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "3",
-            "1",
-            "2",
-            "0"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 3, how many elements are in it after these operations?\n<pre><code>MAX = 3\nCQ.enqueue(73)\nCQ.enqueue(51)\nCQ.enqueue(22)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "0",
-            "1",
-            "2",
-            "3"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 5, how many elements are in it after these operations?\n<pre><code>MAX = 5\nCQ.enqueue(50)\nCQ.enqueue(91)\nCQ.dequeue()\nCQ.enqueue(43)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "3",
-            "0",
-            "2",
-            "1"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 3, how many elements are in it after these operations?\n<pre><code>MAX = 3\nCQ.enqueue(11)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "Empty",
-            "Error",
-            "0",
-            "Undefined"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 4, how many elements are in it after these operations?\n<pre><code>MAX = 4\nCQ.enqueue(29)\nCQ.enqueue(56)\nCQ.enqueue(14)</code></pre>",
-        "options": [
-            "0",
-            "1",
-            "2",
-            "3"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 4, how many elements are in it after these operations?\n<pre><code>MAX = 4\nCQ.enqueue(85)\nCQ.dequeue()\nCQ.enqueue(45)\nCQ.enqueue(15)</code></pre>",
-        "options": [
-            "2",
-            "1",
-            "3",
-            "0"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Given an empty Circular Queue <code>CQ</code> with capacity 4, how many elements are in it after these operations?\n<pre><code>MAX = 4\nCQ.enqueue(44)\nCQ.enqueue(82)\nCQ.enqueue(98)\nCQ.enqueue(47)\nCQ.dequeue()</code></pre>",
-        "options": [
-            "3",
-            "0",
-            "1",
-            "2"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>if front == -1:\n  print 'Underflow'\nelse:\n  value = cqueue[front]\n  if front == rear:\n    front = -1; rear = -1\n  else:\n    front = (front + 1) % MAX\n  return value</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Enqueue",
-            "IsFull",
-            "Dequeue"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>if front == -1:\n  print 'Underflow'\nelse:\n  value = cqueue[front]\n  if front == rear:\n    front = -1; rear = -1\n  else:\n    front = (front + 1) % MAX\n  return value</code></pre>",
-        "options": [
-            "Next Position",
-            "Dequeue",
-            "IsEmpty",
-            "Enqueue"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>if front == -1:\n  print 'Underflow'\nelse:\n  value = cqueue[front]\n  if front == rear:\n    front = -1; rear = -1\n  else:\n    front = (front + 1) % MAX\n  return value</code></pre>",
-        "options": [
-            "Dequeue",
-            "Enqueue",
-            "IsEmpty",
-            "IsFull"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>if (rear + 1) % MAX == front:\n  print 'Overflow'\nelse:\n  if front == -1: front = 0\n  rear = (rear + 1) % MAX\n  cqueue[rear] = value</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Enqueue",
-            "Dequeue",
-            "IsFull"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>if (rear + 1) % MAX == front:\n  print 'Overflow'\nelse:\n  if front == -1: front = 0\n  rear = (rear + 1) % MAX\n  cqueue[rear] = value</code></pre>",
-        "options": [
-            "IsEmpty",
-            "IsFull",
-            "Enqueue",
-            "Dequeue"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>if (rear + 1) % MAX == front:\n  print 'Overflow'\nelse:\n  if front == -1: front = 0\n  rear = (rear + 1) % MAX\n  cqueue[rear] = value</code></pre>",
-        "options": [
-            "Enqueue",
-            "IsEmpty",
-            "Next Position",
-            "IsFull"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return front == -1</code></pre>",
-        "options": [
-            "IsEmpty",
-            "IsFull",
-            "Dequeue",
-            "Enqueue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return front == -1</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Enqueue",
-            "Next Position",
-            "Dequeue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return front == -1</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Dequeue",
-            "Next Position",
-            "IsFull"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return (rear + 1) % MAX == front</code></pre>",
-        "options": [
-            "IsFull",
-            "Next Position",
-            "IsEmpty",
-            "Dequeue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return (rear + 1) % MAX == front</code></pre>",
-        "options": [
-            "IsEmpty",
-            "Next Position",
-            "Dequeue",
-            "IsFull"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return (rear + 1) % MAX == front</code></pre>",
-        "options": [
-            "IsFull",
-            "Dequeue",
-            "Enqueue",
-            "IsEmpty"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return (current + 1) % MAX</code></pre>",
-        "options": [
-            "Dequeue",
-            "Enqueue",
-            "Next Position",
-            "IsEmpty"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return (current + 1) % MAX</code></pre>",
-        "options": [
-            "Next Position",
-            "IsFull",
-            "IsEmpty",
-            "Dequeue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which Circular Queue concept does the following pseudocode represent?\n<pre><code>return (current + 1) % MAX</code></pre>",
-        "options": [
-            "Next Position",
-            "IsFull",
-            "IsEmpty",
-            "Dequeue"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "What is the condition for a Circular Queue being full?",
-        "options": [
-            "Multiplication (*)",
-            "To increase maximum capacity dynamically",
-            "It is not more efficient",
-            "(rear + 1) % MAX == front"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "What is the condition for a Circular Queue being full?",
-        "options": [
-            "rear == MAX - 1",
-            "(rear + 1) % MAX == front",
-            "Stack Buffer",
-            "Multiplication (*)"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is the condition for a Circular Queue being full?",
-        "options": [
-            "To increase maximum capacity dynamically",
-            "rear == MAX - 1",
-            "front == 0",
-            "(rear + 1) % MAX == front"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Why is Dequeue more efficient in Circular Queue compared to a linear array shifting approach?",
-        "options": [
-            "Stack Buffer",
-            "It avoids shifting elements",
-            "It is not more efficient",
-            "Multiplication (*)"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Why is Dequeue more efficient in Circular Queue compared to a linear array shifting approach?",
-        "options": [
-            "It avoids shifting elements",
-            "It is not more efficient",
-            "To increase maximum capacity dynamically",
-            "front == 0"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Why is Dequeue more efficient in Circular Queue compared to a linear array shifting approach?",
-        "options": [
-            "front == 0",
-            "It avoids shifting elements",
-            "Multiplication (*)",
-            "It is not more efficient"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What mathematical operator is essential for wrapping around in a Circular Queue?",
-        "options": [
-            "It is not more efficient",
-            "Modulo division (%)",
-            "rear == MAX - 1",
-            "To increase maximum capacity dynamically"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What mathematical operator is essential for wrapping around in a Circular Queue?",
-        "options": [
-            "rear == MAX - 1",
-            "To increase maximum capacity dynamically",
-            "Modulo division (%)",
-            "Multiplication (*)"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "What mathematical operator is essential for wrapping around in a Circular Queue?",
-        "options": [
-            "It is not more efficient",
-            "Modulo division (%)",
-            "Stack Buffer",
-            "To increase maximum capacity dynamically"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is another common name for a Circular Queue?",
-        "options": [
-            "To increase maximum capacity dynamically",
-            "rear == MAX - 1",
-            "Ring Buffer",
-            "It is not more efficient"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "What is another common name for a Circular Queue?",
-        "options": [
-            "front == 0",
-            "Ring Buffer",
-            "To increase maximum capacity dynamically",
-            "Stack Buffer"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is another common name for a Circular Queue?",
-        "options": [
-            "Stack Buffer",
-            "Ring Buffer",
-            "It is not more efficient",
-            "front == 0"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is the primary advantage of a Circular Queue over a linear Queue?",
-        "options": [
-            "rear == MAX - 1",
-            "To efficiently use array space",
-            "To increase maximum capacity dynamically",
-            "Stack Buffer"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is the primary advantage of a Circular Queue over a linear Queue?",
-        "options": [
-            "Multiplication (*)",
-            "To efficiently use array space",
-            "rear == MAX - 1",
-            "It is not more efficient"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is the primary advantage of a Circular Queue over a linear Queue?",
-        "options": [
-            "To increase maximum capacity dynamically",
-            "It is not more efficient",
-            "Multiplication (*)",
-            "To efficiently use array space"
-        ],
-        "answer": 3
-    }
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Removing an element from a stack is known as:",
+    "options": [
+      "Pop",
+      "Delete",
+      "Dequeue",
+      "Push"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(23)</code><br><code>S.push(86)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "Error",
+      "23",
+      "86",
+      "Empty"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(38)</code><br><code>S.push(84)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "84",
+      "38",
+      "Empty",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Removing an element from a stack is known as:",
+    "options": [
+      "Push",
+      "Pop",
+      "Dequeue",
+      "Delete"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(30)</code><br><code>S.push(57)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "30",
+      "Empty",
+      "57",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(47)</code><br><code>S.push(60)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "47",
+      "60",
+      "Empty",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "What logical principle does a Stack inherently follow?",
+    "options": [
+      "FIFO",
+      "LIFO (Last-In, First-Out)",
+      "LILO",
+      "Random Access"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(11)</code><br><code>S.push(52)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "Error",
+      "Empty",
+      "52",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(35)</code><br><code>S.push(53)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "Error",
+      "53",
+      "Empty",
+      "35"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(44)</code><br><code>S.push(51)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "51",
+      "Empty",
+      "44",
+      "Error"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Adding an element to the top of a stack is referred to as:",
+    "options": [
+      "Pop",
+      "Push",
+      "Enqueue",
+      "Insert"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Removing an element from a stack is known as:",
+    "options": [
+      "Delete",
+      "Push",
+      "Pop",
+      "Dequeue"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Adding an element to the top of a stack is referred to as:",
+    "options": [
+      "Insert",
+      "Enqueue",
+      "Pop",
+      "Push"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Which pointer primarily manages a standard Stack?",
+    "options": [
+      "Top",
+      "Rear",
+      "Head",
+      "Front"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "What logical principle does a Stack inherently follow?",
+    "options": [
+      "LIFO (Last-In, First-Out)",
+      "LILO",
+      "Random Access",
+      "FIFO"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Which pointer primarily manages a standard Stack?",
+    "options": [
+      "Head",
+      "Front",
+      "Top",
+      "Rear"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(47)</code><br><code>S.push(54)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "Empty",
+      "54",
+      "Error",
+      "47"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Basic",
+    "question": "Given an empty Stack S. You perform:<br><code>S.push(34)</code><br><code>S.push(52)</code><br><code>S.pop()</code><br>What is now at the top of the Stack?",
+    "options": [
+      "Error",
+      "34",
+      "52",
+      "Empty"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Which of the following is an algorithm heavily reliant on Stacks?",
+    "options": [
+      "Selection Sort",
+      "Breadth-First Search (BFS)",
+      "Depth-First Search (DFS)",
+      "Binary Search"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Which of the following is an algorithm heavily reliant on Stacks?",
+    "options": [
+      "Depth-First Search (DFS)",
+      "Breadth-First Search (BFS)",
+      "Binary Search",
+      "Selection Sort"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "In evaluating arithmetic expressions, what notation effectively uses a Stack?",
+    "options": [
+      "Polynomial notation",
+      "Postfix (Reverse Polish)",
+      "Prefix",
+      "Infix"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "In evaluating arithmetic expressions, what notation effectively uses a Stack?",
+    "options": [
+      "Postfix (Reverse Polish)",
+      "Prefix",
+      "Infix",
+      "Polynomial notation"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Which of the following is an algorithm heavily reliant on Stacks?",
+    "options": [
+      "Breadth-First Search (BFS)",
+      "Binary Search",
+      "Depth-First Search (DFS)",
+      "Selection Sort"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Stack S:<br><code>S.push(64)</code><br><code>S.push(94)</code><br><code>S.pop()</code><br><code>S.push(89)</code><br><code>S.pop()</code><br>What is the final top element?",
+    "options": [
+      "36",
+      "22",
+      "64",
+      "84"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Analyze the pseudocode:<br><pre><code>if top == 0:\n  return null\nelse:\n  return arr[top]</code></pre><br>What is wrong with this Peek operation if array is 0-indexed?",
+    "options": [
+      "Nothing is wrong.",
+      "Top should be checked for -1, not 0.",
+      "It pops the element instead of peeking.",
+      "Array indexing is out of bounds."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Analyze the pseudocode:<br><pre><code>if top == 0:\n  return null\nelse:\n  return arr[top]</code></pre><br>What is wrong with this Peek operation if array is 0-indexed?",
+    "options": [
+      "Array indexing is out of bounds.",
+      "It pops the element instead of peeking.",
+      "Nothing is wrong.",
+      "Top should be checked for -1, not 0."
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Which of the following is an algorithm heavily reliant on Stacks?",
+    "options": [
+      "Depth-First Search (DFS)",
+      "Selection Sort",
+      "Breadth-First Search (BFS)",
+      "Binary Search"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Analyze the pseudocode:<br><pre><code>if top == 0:\n  return null\nelse:\n  return arr[top]</code></pre><br>What is wrong with this Peek operation if array is 0-indexed?",
+    "options": [
+      "Nothing is wrong.",
+      "Array indexing is out of bounds.",
+      "Top should be checked for -1, not 0.",
+      "It pops the element instead of peeking."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Analyze the pseudocode:<br><pre><code>if top == 0:\n  return null\nelse:\n  return arr[top]</code></pre><br>What is wrong with this Peek operation if array is 0-indexed?",
+    "options": [
+      "It pops the element instead of peeking.",
+      "Nothing is wrong.",
+      "Array indexing is out of bounds.",
+      "Top should be checked for -1, not 0."
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "In evaluating arithmetic expressions, what notation effectively uses a Stack?",
+    "options": [
+      "Polynomial notation",
+      "Postfix (Reverse Polish)",
+      "Prefix",
+      "Infix"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "How does a system handle recursion?",
+    "options": [
+      "Circular Buffer",
+      "Process Queue",
+      "System Call Stack",
+      "Heap Area"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Which of the following is an algorithm heavily reliant on Stacks?",
+    "options": [
+      "Binary Search",
+      "Breadth-First Search (BFS)",
+      "Selection Sort",
+      "Depth-First Search (DFS)"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Which of the following is an algorithm heavily reliant on Stacks?",
+    "options": [
+      "Selection Sort",
+      "Depth-First Search (DFS)",
+      "Binary Search",
+      "Breadth-First Search (BFS)"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Intermediate",
+    "question": "Analyze the pseudocode:<br><pre><code>if top == 0:\n  return null\nelse:\n  return arr[top]</code></pre><br>What is wrong with this Peek operation if array is 0-indexed?",
+    "options": [
+      "Top should be checked for -1, not 0.",
+      "Array indexing is out of bounds.",
+      "Nothing is wrong.",
+      "It pops the element instead of peeking."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Predict the top element after executing this logic on an empty Stack S:<br><pre><code>for(i=3; i<6; i++):\n  S.push(i)\n  S.push(i * 2)\n  S.pop()\nS.push(S.pop() + 1)</code></pre>",
+    "options": [
+      "5",
+      "6",
+      "12",
+      "7"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Predict the top element after executing this logic on an empty Stack S:<br><pre><code>for(i=5; i<8; i++):\n  S.push(i)\n  S.push(i * 2)\n  S.pop()\nS.push(S.pop() + 1)</code></pre>",
+    "options": [
+      "8",
+      "7",
+      "16",
+      "9"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Predict the top element after executing this logic on an empty Stack S:<br><pre><code>for(i=3; i<6; i++):\n  S.push(i)\n  S.push(i * 2)\n  S.pop()\nS.push(S.pop() + 1)</code></pre>",
+    "options": [
+      "12",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Which data property makes a stack ideal for balancing parentheses in compiler design?",
+    "options": [
+      "Its ability to defer resolving the most recently opened bracket until matched.",
+      "Its O(1) random access property.",
+      "Its FIFO tracking logic.",
+      "Its dynamic array resizing capability."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Predict the top element after executing this logic on an empty Stack S:<br><pre><code>for(i=2; i<5; i++):\n  S.push(i)\n  S.push(i * 2)\n  S.pop()\nS.push(S.pop() + 1)</code></pre>",
+    "options": [
+      "4",
+      "10",
+      "5",
+      "6"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "When implementing two stacks efficiently inside a single array of size N, what are the optimal starting indices for their 'top' pointers?",
+    "options": [
+      "top1 = -1, top2 = N",
+      "top1 = 0, top2 = N/2",
+      "top1 = 0, top2 = 1",
+      "top1 = -1, top2 = N-1"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Which data property makes a stack ideal for balancing parentheses in compiler design?",
+    "options": [
+      "Its ability to defer resolving the most recently opened bracket until matched.",
+      "Its O(1) random access property.",
+      "Its FIFO tracking logic.",
+      "Its dynamic array resizing capability."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "When implementing two stacks efficiently inside a single array of size N, what are the optimal starting indices for their 'top' pointers?",
+    "options": [
+      "top1 = -1, top2 = N-1",
+      "top1 = -1, top2 = N",
+      "top1 = 0, top2 = N/2",
+      "top1 = 0, top2 = 1"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Predict the top element after executing this logic on an empty Stack S:<br><pre><code>for(i=1; i<4; i++):\n  S.push(i)\n  S.push(i * 2)\n  S.pop()\nS.push(S.pop() + 1)</code></pre>",
+    "options": [
+      "4",
+      "5",
+      "8",
+      "3"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "When implementing two stacks efficiently inside a single array of size N, what are the optimal starting indices for their 'top' pointers?",
+    "options": [
+      "top1 = 0, top2 = N/2",
+      "top1 = -1, top2 = N-1",
+      "top1 = -1, top2 = N",
+      "top1 = 0, top2 = 1"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "When implementing two stacks efficiently inside a single array of size N, what are the optimal starting indices for their 'top' pointers?",
+    "options": [
+      "top1 = 0, top2 = N/2",
+      "top1 = -1, top2 = N",
+      "top1 = -1, top2 = N-1",
+      "top1 = 0, top2 = 1"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Predict the top element after executing this logic on an empty Stack S:<br><pre><code>for(i=5; i<8; i++):\n  S.push(i)\n  S.push(i * 2)\n  S.pop()\nS.push(S.pop() + 1)</code></pre>",
+    "options": [
+      "16",
+      "9",
+      "8",
+      "7"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Which data property makes a stack ideal for balancing parentheses in compiler design?",
+    "options": [
+      "Its O(1) random access property.",
+      "Its dynamic array resizing capability.",
+      "Its ability to defer resolving the most recently opened bracket until matched.",
+      "Its FIFO tracking logic."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "When implementing two stacks efficiently inside a single array of size N, what are the optimal starting indices for their 'top' pointers?",
+    "options": [
+      "top1 = -1, top2 = N-1",
+      "top1 = 0, top2 = 1",
+      "top1 = 0, top2 = N/2",
+      "top1 = -1, top2 = N"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Which data property makes a stack ideal for balancing parentheses in compiler design?",
+    "options": [
+      "Its FIFO tracking logic.",
+      "Its ability to defer resolving the most recently opened bracket until matched.",
+      "Its dynamic array resizing capability.",
+      "Its O(1) random access property."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Stack",
+    "difficulty": "Advanced",
+    "question": "Which data property makes a stack ideal for balancing parentheses in compiler design?",
+    "options": [
+      "Its ability to defer resolving the most recently opened bracket until matched.",
+      "Its FIFO tracking logic.",
+      "Its O(1) random access property.",
+      "Its dynamic array resizing capability."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, from where are elements removed?",
+    "options": [
+      "Rear",
+      "Top",
+      "Front (Head)",
+      "Bottom"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, from where are elements removed?",
+    "options": [
+      "Rear",
+      "Bottom",
+      "Front (Head)",
+      "Top"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "What logical principle does a linear Queue follow?",
+    "options": [
+      "Random Access",
+      "LIFO",
+      "FILO",
+      "FIFO (First-In, First-Out)"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(20)</code><br><code>Q.enqueue(52)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "Empty",
+      "52",
+      "Error",
+      "20"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, from where are elements removed?",
+    "options": [
+      "Bottom",
+      "Top",
+      "Rear",
+      "Front (Head)"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(25)</code><br><code>Q.enqueue(97)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "25",
+      "Empty",
+      "97",
+      "Error"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, from where are elements removed?",
+    "options": [
+      "Rear",
+      "Front (Head)",
+      "Top",
+      "Bottom"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, where are new elements added?",
+    "options": [
+      "Front",
+      "Top",
+      "Middle",
+      "Rear (Tail)"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, where are new elements added?",
+    "options": [
+      "Top",
+      "Middle",
+      "Front",
+      "Rear (Tail)"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(12)</code><br><code>Q.enqueue(62)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "Empty",
+      "Error",
+      "62",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, where are new elements added?",
+    "options": [
+      "Rear (Tail)",
+      "Middle",
+      "Front",
+      "Top"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "In a standard Queue, where are new elements added?",
+    "options": [
+      "Middle",
+      "Rear (Tail)",
+      "Front",
+      "Top"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(39)</code><br><code>Q.enqueue(86)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "Empty",
+      "Error",
+      "86",
+      "39"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(12)</code><br><code>Q.enqueue(61)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "Error",
+      "61",
+      "12",
+      "Empty"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(46)</code><br><code>Q.enqueue(72)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "72",
+      "Error",
+      "46",
+      "Empty"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(37)</code><br><code>Q.enqueue(74)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "37",
+      "74",
+      "Empty",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(48)</code><br><code>Q.enqueue(81)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "Empty",
+      "81",
+      "48",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Basic",
+    "question": "Given an empty Queue Q. You perform:<br><code>Q.enqueue(16)</code><br><code>Q.enqueue(87)</code><br><code>Q.dequeue()</code><br>What element is currently at the front of the Queue?",
+    "options": [
+      "16",
+      "87",
+      "Empty",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(63)</code><br><code>Q.enqueue(24)</code><br><code>Q.enqueue(25)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(85)</code><br>What is the front element now?",
+    "options": [
+      "23",
+      "62",
+      "24",
+      "83"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(94)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(64)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(53)</code><br>What is the front element now?",
+    "options": [
+      "11",
+      "32",
+      "53",
+      "50"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Consider a linear queue using an array. After repeatedly enqueueing and dequeueing elements until the 'rear' pointer reaches the maximum index, what problem occurs?",
+    "options": [
+      "Memory Leak: RAM is continuously consumed.",
+      "Underflow: The queue prematurely empties.",
+      "False Overflow: Cannot enqueue even if there are empty spaces at the front.",
+      "Segmentation Fault."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Consider a linear queue using an array. After repeatedly enqueueing and dequeueing elements until the 'rear' pointer reaches the maximum index, what problem occurs?",
+    "options": [
+      "Memory Leak: RAM is continuously consumed.",
+      "Underflow: The queue prematurely empties.",
+      "Segmentation Fault.",
+      "False Overflow: Cannot enqueue even if there are empty spaces at the front."
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Consider a linear queue using an array. After repeatedly enqueueing and dequeueing elements until the 'rear' pointer reaches the maximum index, what problem occurs?",
+    "options": [
+      "False Overflow: Cannot enqueue even if there are empty spaces at the front.",
+      "Segmentation Fault.",
+      "Memory Leak: RAM is continuously consumed.",
+      "Underflow: The queue prematurely empties."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(32)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(12)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(54)</code><br>What is the front element now?",
+    "options": [
+      "87",
+      "47",
+      "93",
+      "54"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(36)</code><br><code>Q.enqueue(55)</code><br><code>Q.dequeue()</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(32)</code><br>What is the front element now?",
+    "options": [
+      "72",
+      "32",
+      "64",
+      "42"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(13)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(84)</code><br><code>Q.enqueue(20)</code><br><code>Q.dequeue()</code><br>What is the front element now?",
+    "options": [
+      "12",
+      "81",
+      "11",
+      "20"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(56)</code><br><code>Q.enqueue(64)</code><br><code>Q.enqueue(91)</code><br><code>Q.dequeue()</code><br><code>Q.dequeue()</code><br>What is the front element now?",
+    "options": [
+      "60",
+      "36",
+      "91",
+      "66"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(74)</code><br><code>Q.enqueue(91)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(56)</code><br><code>Q.enqueue(14)</code><br>What is the front element now?",
+    "options": [
+      "53",
+      "78",
+      "61",
+      "91"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Consider a linear queue using an array. After repeatedly enqueueing and dequeueing elements until the 'rear' pointer reaches the maximum index, what problem occurs?",
+    "options": [
+      "Memory Leak: RAM is continuously consumed.",
+      "False Overflow: Cannot enqueue even if there are empty spaces at the front.",
+      "Underflow: The queue prematurely empties.",
+      "Segmentation Fault."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(17)</code><br><code>Q.enqueue(89)</code><br><code>Q.enqueue(86)</code><br><code>Q.enqueue(26)</code><br><code>Q.enqueue(28)</code><br>What is the front element now?",
+    "options": [
+      "15",
+      "18",
+      "67",
+      "17"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Consider a linear queue using an array. After repeatedly enqueueing and dequeueing elements until the 'rear' pointer reaches the maximum index, what problem occurs?",
+    "options": [
+      "False Overflow: Cannot enqueue even if there are empty spaces at the front.",
+      "Segmentation Fault.",
+      "Memory Leak: RAM is continuously consumed.",
+      "Underflow: The queue prematurely empties."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Consider a linear queue using an array. After repeatedly enqueueing and dequeueing elements until the 'rear' pointer reaches the maximum index, what problem occurs?",
+    "options": [
+      "Segmentation Fault.",
+      "Memory Leak: RAM is continuously consumed.",
+      "Underflow: The queue prematurely empties.",
+      "False Overflow: Cannot enqueue even if there are empty spaces at the front."
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Consider a linear queue using an array. After repeatedly enqueueing and dequeueing elements until the 'rear' pointer reaches the maximum index, what problem occurs?",
+    "options": [
+      "False Overflow: Cannot enqueue even if there are empty spaces at the front.",
+      "Segmentation Fault.",
+      "Memory Leak: RAM is continuously consumed.",
+      "Underflow: The queue prematurely empties."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Intermediate",
+    "question": "Trace the following operations on an empty Queue Q:<br><code>Q.enqueue(23)</code><br><code>Q.enqueue(37)</code><br><code>Q.dequeue()</code><br><code>Q.enqueue(36)</code><br><code>Q.dequeue()</code><br>What is the front element now?",
+    "options": [
+      "36",
+      "37",
+      "84",
+      "98"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 2, rear = 3",
+      "front = 2, rear = 4",
+      "front = 1, rear = 5",
+      "front = 0, rear = 4"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "If you implement a Queue using two Stacks (S1 and S2), what is the worst-case time complexity of the Dequeue operation?",
+    "options": [
+      "O(1) - it involves just one pop.",
+      "O(log N) - binary tree shifting is used.",
+      "O(N^2) - due to nested loops.",
+      "O(N) - when elements need to be transferred from S1 to S2."
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "If you implement a Queue using two Stacks (S1 and S2), what is the worst-case time complexity of the Dequeue operation?",
+    "options": [
+      "O(1) - it involves just one pop.",
+      "O(N^2) - due to nested loops.",
+      "O(N) - when elements need to be transferred from S1 to S2.",
+      "O(log N) - binary tree shifting is used."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 2, rear = 3",
+      "front = 0, rear = 4",
+      "front = 2, rear = 4",
+      "front = 1, rear = 5"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 2, rear = 4",
+      "front = 0, rear = 4",
+      "front = 1, rear = 5",
+      "front = 2, rear = 3"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "If you implement a Queue using two Stacks (S1 and S2), what is the worst-case time complexity of the Dequeue operation?",
+    "options": [
+      "O(1) - it involves just one pop.",
+      "O(log N) - binary tree shifting is used.",
+      "O(N) - when elements need to be transferred from S1 to S2.",
+      "O(N^2) - due to nested loops."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 1, rear = 5",
+      "front = 2, rear = 3",
+      "front = 0, rear = 4",
+      "front = 2, rear = 4"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 2, rear = 3",
+      "front = 2, rear = 4",
+      "front = 1, rear = 5",
+      "front = 0, rear = 4"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "If you implement a Queue using two Stacks (S1 and S2), what is the worst-case time complexity of the Dequeue operation?",
+    "options": [
+      "O(N^2) - due to nested loops.",
+      "O(1) - it involves just one pop.",
+      "O(log N) - binary tree shifting is used.",
+      "O(N) - when elements need to be transferred from S1 to S2."
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "If you implement a Queue using two Stacks (S1 and S2), what is the worst-case time complexity of the Dequeue operation?",
+    "options": [
+      "O(N) - when elements need to be transferred from S1 to S2.",
+      "O(1) - it involves just one pop.",
+      "O(N^2) - due to nested loops.",
+      "O(log N) - binary tree shifting is used."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "If you implement a Queue using two Stacks (S1 and S2), what is the worst-case time complexity of the Dequeue operation?",
+    "options": [
+      "O(N) - when elements need to be transferred from S1 to S2.",
+      "O(1) - it involves just one pop.",
+      "O(log N) - binary tree shifting is used.",
+      "O(N^2) - due to nested loops."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 0, rear = 4",
+      "front = 2, rear = 3",
+      "front = 1, rear = 5",
+      "front = 2, rear = 4"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 2, rear = 4",
+      "front = 0, rear = 4",
+      "front = 2, rear = 3",
+      "front = 1, rear = 5"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "If you implement a Queue using two Stacks (S1 and S2), what is the worst-case time complexity of the Dequeue operation?",
+    "options": [
+      "O(1) - it involves just one pop.",
+      "O(N) - when elements need to be transferred from S1 to S2.",
+      "O(N^2) - due to nested loops.",
+      "O(log N) - binary tree shifting is used."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 2, rear = 4",
+      "front = 1, rear = 5",
+      "front = 2, rear = 3",
+      "front = 0, rear = 4"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Queue",
+    "difficulty": "Advanced",
+    "question": "An array-based Linear Queue of size 5 starts with `front = -1`, `rear = -1`. We Enqueue 3 items, Dequeue 2 items, Enqueue 2 items. What are the current values of `front` and `rear`?",
+    "options": [
+      "front = 0, rear = 4",
+      "front = 1, rear = 5",
+      "front = 2, rear = 4",
+      "front = 2, rear = 3"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "Why was the Circular Queue invented?",
+    "options": [
+      "To perform random access faster.",
+      "To use LIFO efficiently.",
+      "To solve the 'False Overflow' problem in linear array queues.",
+      "To reduce Time Complexity to O(1)."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "-1",
+      "0",
+      "MAX + 1",
+      "MAX"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "What is another term for a Circular Queue?",
+    "options": [
+      "Ring Buffer",
+      "Loop Queue",
+      "Linked List",
+      "Circular Stack"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "-1",
+      "MAX + 1",
+      "MAX",
+      "0"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "What mathematical operator is critical for Circular Queues?",
+    "options": [
+      "Bitwise XOR",
+      "Modulo (%)",
+      "Division (/)",
+      "Power (^)"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "What is another term for a Circular Queue?",
+    "options": [
+      "Circular Stack",
+      "Loop Queue",
+      "Ring Buffer",
+      "Linked List"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "Why was the Circular Queue invented?",
+    "options": [
+      "To reduce Time Complexity to O(1).",
+      "To solve the 'False Overflow' problem in linear array queues.",
+      "To perform random access faster.",
+      "To use LIFO efficiently."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "What is another term for a Circular Queue?",
+    "options": [
+      "Circular Stack",
+      "Loop Queue",
+      "Linked List",
+      "Ring Buffer"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "What mathematical operator is critical for Circular Queues?",
+    "options": [
+      "Division (/)",
+      "Power (^)",
+      "Bitwise XOR",
+      "Modulo (%)"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "What is another term for a Circular Queue?",
+    "options": [
+      "Loop Queue",
+      "Ring Buffer",
+      "Circular Stack",
+      "Linked List"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "MAX",
+      "0",
+      "MAX + 1",
+      "-1"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "Why was the Circular Queue invented?",
+    "options": [
+      "To use LIFO efficiently.",
+      "To solve the 'False Overflow' problem in linear array queues.",
+      "To perform random access faster.",
+      "To reduce Time Complexity to O(1)."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "What is another term for a Circular Queue?",
+    "options": [
+      "Ring Buffer",
+      "Circular Stack",
+      "Loop Queue",
+      "Linked List"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "MAX + 1",
+      "0",
+      "-1",
+      "MAX"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "MAX + 1",
+      "MAX",
+      "0",
+      "-1"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "-1",
+      "MAX",
+      "MAX + 1",
+      "0"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "0",
+      "MAX + 1",
+      "MAX",
+      "-1"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Basic",
+    "question": "In a Circular Queue of size MAX, if `rear == MAX - 1`, what will the `rear` become on the next Enqueue (assuming it's not full)?",
+    "options": [
+      "0",
+      "-1",
+      "MAX",
+      "MAX + 1"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When the last element is dequeued, making the queue completely empty.",
+      "When `rear` wraps around to 0.",
+      "It never gets reset, it only increments.",
+      "When `front` reaches the end of the array (N-1)."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue of size N, what is the standard condition to check if it is FULL?",
+    "options": [
+      "rear == N - 1",
+      "front == -1 && rear == N - 1",
+      "front == (rear + 1) % N",
+      "(rear + 1) % N == front"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue of size N, what is the standard condition to check if it is FULL?",
+    "options": [
+      "front == -1 && rear == N - 1",
+      "rear == N - 1",
+      "front == (rear + 1) % N",
+      "(rear + 1) % N == front"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "It never gets reset, it only increments.",
+      "When `rear` wraps around to 0.",
+      "When the last element is dequeued, making the queue completely empty.",
+      "When `front` reaches the end of the array (N-1)."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When `rear` wraps around to 0.",
+      "When the last element is dequeued, making the queue completely empty.",
+      "When `front` reaches the end of the array (N-1).",
+      "It never gets reset, it only increments."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue of size N, what is the standard condition to check if it is FULL?",
+    "options": [
+      "rear == N - 1",
+      "front == (rear + 1) % N",
+      "(rear + 1) % N == front",
+      "front == -1 && rear == N - 1"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue of size N, what is the standard condition to check if it is FULL?",
+    "options": [
+      "front == -1 && rear == N - 1",
+      "(rear + 1) % N == front",
+      "rear == N - 1",
+      "front == (rear + 1) % N"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When the last element is dequeued, making the queue completely empty.",
+      "It never gets reset, it only increments.",
+      "When `front` reaches the end of the array (N-1).",
+      "When `rear` wraps around to 0."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue of size N, what is the standard condition to check if it is FULL?",
+    "options": [
+      "front == (rear + 1) % N",
+      "(rear + 1) % N == front",
+      "front == -1 && rear == N - 1",
+      "rear == N - 1"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When `rear` wraps around to 0.",
+      "It never gets reset, it only increments.",
+      "When the last element is dequeued, making the queue completely empty.",
+      "When `front` reaches the end of the array (N-1)."
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue of size N, what is the standard condition to check if it is FULL?",
+    "options": [
+      "front == (rear + 1) % N",
+      "front == -1 && rear == N - 1",
+      "rear == N - 1",
+      "(rear + 1) % N == front"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When the last element is dequeued, making the queue completely empty.",
+      "When `front` reaches the end of the array (N-1).",
+      "When `rear` wraps around to 0.",
+      "It never gets reset, it only increments."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When the last element is dequeued, making the queue completely empty.",
+      "It never gets reset, it only increments.",
+      "When `rear` wraps around to 0.",
+      "When `front` reaches the end of the array (N-1)."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue of size N, what is the standard condition to check if it is FULL?",
+    "options": [
+      "front == -1 && rear == N - 1",
+      "(rear + 1) % N == front",
+      "rear == N - 1",
+      "front == (rear + 1) % N"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When `rear` wraps around to 0.",
+      "When the last element is dequeued, making the queue completely empty.",
+      "When `front` reaches the end of the array (N-1).",
+      "It never gets reset, it only increments."
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Intermediate",
+    "question": "In a Circular Queue, when does `front` get reset to -1?",
+    "options": [
+      "When the last element is dequeued, making the queue completely empty.",
+      "It never gets reset, it only increments.",
+      "When `rear` wraps around to 0.",
+      "When `front` reaches the end of the array (N-1)."
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 6, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 3, rear = 0",
+      "front = 2, rear = 1",
+      "front = 2, rear = 5",
+      "front = 2, rear = 0"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 4, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 2",
+      "front = 2, rear = 0",
+      "front = 3, rear = 1",
+      "front = 2, rear = 1"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 5, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 2",
+      "front = 3, rear = 1",
+      "front = 2, rear = 0",
+      "front = 2, rear = 1"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 5, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 2",
+      "front = 2, rear = 0",
+      "front = 3, rear = 1",
+      "front = 2, rear = 1"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 5, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 1",
+      "front = 2, rear = 2",
+      "front = 2, rear = 0",
+      "front = 3, rear = 1"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 6, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 1",
+      "front = 3, rear = 0",
+      "front = 2, rear = 5",
+      "front = 2, rear = 0"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 4, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 3, rear = 1",
+      "front = 2, rear = 0",
+      "front = 2, rear = 2",
+      "front = 2, rear = 1"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 5, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 3, rear = 1",
+      "front = 2, rear = 0",
+      "front = 2, rear = 1",
+      "front = 2, rear = 2"
+    ],
+    "answer": 2
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 4, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 0",
+      "front = 2, rear = 1",
+      "front = 2, rear = 2",
+      "front = 3, rear = 1"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 4, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 2",
+      "front = 3, rear = 1",
+      "front = 2, rear = 0",
+      "front = 2, rear = 1"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 5, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 2",
+      "front = 3, rear = 1",
+      "front = 2, rear = 0",
+      "front = 2, rear = 1"
+    ],
+    "answer": 3
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 6, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 3, rear = 0",
+      "front = 2, rear = 0",
+      "front = 2, rear = 5",
+      "front = 2, rear = 1"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 6, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 0",
+      "front = 3, rear = 0",
+      "front = 2, rear = 5",
+      "front = 2, rear = 1"
+    ],
+    "answer": 0
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 6, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 1",
+      "front = 2, rear = 0",
+      "front = 3, rear = 0",
+      "front = 2, rear = 5"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 5, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 3, rear = 1",
+      "front = 2, rear = 1",
+      "front = 2, rear = 0",
+      "front = 2, rear = 2"
+    ],
+    "answer": 1
+  },
+  {
+    "topic": "Circular Queue",
+    "difficulty": "Advanced",
+    "question": "Given an empty Circular Queue `CQ` with MAX = 5, `front = -1`, `rear = -1`.<br>Operations:<br>1. Enqueue 4 items.<br>2. Dequeue 2 items.<br>3. Enqueue 3 items.<br>What is the final state of `front` and `rear` pointers?",
+    "options": [
+      "front = 2, rear = 0",
+      "front = 2, rear = 2",
+      "front = 3, rear = 1",
+      "front = 2, rear = 1"
+    ],
+    "answer": 3
+  }
 ];
+
 
 let currentQuestionIndex = 0;
 let score = 0;
+let filteredQuestions = [];
 
+const setupContainer = document.getElementById("setup-container");
 const quizContainer = document.getElementById("quiz-container");
 const resultContainer = document.getElementById("result-container");
+
+const topicSelect = document.getElementById("topic-select");
+const difficultySelect = document.getElementById("difficulty-select");
+const startBtn = document.getElementById("start-btn");
+
 const questionText = document.getElementById("question-text");
 const optionsSection = document.getElementById("options");
 const questionCountText = document.getElementById("question-count");
@@ -1514,16 +1822,56 @@ const nextBtn = document.getElementById("next-btn");
 const finalScoreText = document.getElementById("final-score");
 const resultMessageText = document.getElementById("result-message");
 const restartBtn = document.getElementById("restart-btn");
+const questionBadge = document.getElementById("question-badge");
+
+startBtn.addEventListener("click", () => {
+    const topic = topicSelect.value;
+    const diff = difficultySelect.value;
+    
+    // Filter questions
+    filteredQuestions = questions.filter(q => {
+        const matchTopic = (topic === "All") || (q.topic === topic);
+        const matchDiff = (diff === "All") || (q.difficulty === diff);
+        return matchTopic && matchDiff;
+    });
+    
+    // Shuffle filtered questions
+    filteredQuestions.sort(() => Math.random() - 0.5);
+    
+    // Fallback if empty
+    if(filteredQuestions.length === 0) filteredQuestions = questions;
+    
+    // Limit to 20 questions max per quiz session, or actual length
+    filteredQuestions = filteredQuestions.slice(0, Math.min(20, filteredQuestions.length));
+    
+    // Start Quiz
+    setupContainer.classList.add("hidden");
+    quizContainer.classList.remove("hidden");
+    currentQuestionIndex = 0;
+    score = 0;
+    
+    loadQuestion();
+});
 
 function loadQuestion() {
     // Reset state
     nextBtn.classList.add("hidden");
     optionsSection.innerHTML = "";
+    optionsSection.scrollIntoView({ behavior: 'smooth', block: 'end' });
     
-    const currentQ = questions[currentQuestionIndex];
+    const currentQ = filteredQuestions[currentQuestionIndex];
     questionText.innerHTML = currentQ.question;
-    questionCountText.textContent = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+    questionCountText.textContent = `Question ${currentQuestionIndex + 1} of ${filteredQuestions.length}`;
     scoreText.textContent = `Score: ${score}`;
+    
+    let badgeColor = "var(--primary)";
+    if(currentQ.difficulty === "Intermediate") badgeColor = "#f39c12";
+    if(currentQ.difficulty === "Advanced") badgeColor = "var(--danger)";
+    
+    if (questionBadge) {
+        questionBadge.style.background = badgeColor;
+        questionBadge.textContent = `${currentQ.difficulty} | ${currentQ.topic}`;
+    }
     
     currentQ.options.forEach((option, index) => {
         const btn = document.createElement("button");
@@ -1539,7 +1887,7 @@ function selectAnswer(selectedIndex, selectedBtn) {
     const allOptions = optionsSection.querySelectorAll(".option-btn");
     allOptions.forEach(btn => btn.disabled = true);
     
-    const currentQ = questions[currentQuestionIndex];
+    const currentQ = filteredQuestions[currentQuestionIndex];
     
     if (selectedIndex === currentQ.answer) {
         selectedBtn.classList.add("correct");
@@ -1560,7 +1908,7 @@ function selectAnswer(selectedIndex, selectedBtn) {
 
 nextBtn.addEventListener("click", () => {
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < filteredQuestions.length) {
         loadQuestion();
     } else {
         showResults();
@@ -1571,13 +1919,14 @@ function showResults() {
     quizContainer.classList.add("hidden");
     resultContainer.classList.remove("hidden");
     
-    finalScoreText.textContent = `${score}/${questions.length}`;
+    finalScoreText.textContent = `${score}/${filteredQuestions.length}`;
     
     let message = "";
-    if (score === questions.length) {
+    let percentage = score / filteredQuestions.length;
+    if (percentage === 1) {
         message = "Perfect score! You are a Data Structures master! 🏆";
-    } else if (score >= 3) {
-        message = "Great job! You have a solid grasp of Stacks & Queues! 👍";
+    } else if (percentage >= 0.7) {
+        message = "Great job! You have a solid grasp! 👍";
     } else {
         message = "Keep learning! Give the theory boxes another read and try again! 📚";
     }
@@ -1585,14 +1934,17 @@ function showResults() {
 }
 
 restartBtn.addEventListener("click", () => {
-    currentQuestionIndex = 0;
-    score = 0;
     resultContainer.classList.add("hidden");
-    quizContainer.classList.remove("hidden");
-    loadQuestion();
+    setupContainer.classList.remove("hidden");
+    
+    // Reset to defaults
+    topicSelect.value = "All";
+    difficultySelect.value = "All";
 });
 
-// Initialize first question
+// Initialize by making sure setup is shown
 document.addEventListener("DOMContentLoaded", () => {
-    loadQuestion();
+    setupContainer.classList.remove("hidden");
+    quizContainer.classList.add("hidden");
+    resultContainer.classList.add("hidden");
 });
