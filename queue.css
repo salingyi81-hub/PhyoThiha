@@ -180,6 +180,18 @@
 }
 
 @media (max-width: 768px) {
+    .nav-tab {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-btn {
+        flex: 1 1 40%;
+        text-align: center;
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
     main {
         display: flex;
         flex-direction: column;

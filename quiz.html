@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queue.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-tab">
+            <a href="index.html" class="nav-btn">Stack</a>
+            <a href="queue.html" class="nav-btn">Queue</a>
+            <a href="circular-queue.html" class="nav-btn">Circular Queue</a>
+            <a href="quiz.html" class="nav-btn active">Quiz</a>
+        </nav>
+        
+        <header>
+            <h1>Test Your Knowledge</h1>
+            <p>Stack, Queue & Circular Queue Concepts</p>
+        </header>
+
+        <main class="quiz-main">
+            <div id="quiz-container" class="quiz-box">
+                <div class="quiz-header">
+                    <span id="question-count">Question 1 of 5</span>
+                    <span id="score">Score: 0</span>
+                </div>
+                
+                <div class="question-section">
+                    <h2 id="question-text">What principle does a Stack follow?</h2>
+                </div>
+                
+                <div class="options-section" id="options">
+                    <!-- Options will be injected here -->
+                </div>
+                
+                <div class="quiz-footer">
+                    <button id="next-btn" class="btn primary hidden">Next Question</button>
+                </div>
+            </div>
+
+            <div id="result-container" class="quiz-box hidden">
+                <h2 id="result-title">Quiz Completed!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">5/5</span>
+                    </div>
+                </div>
+                <p id="result-message">Perfect score! You are a Data Structures master!</p>
+                <div class="quiz-footer">
+                    <button id="restart-btn" class="btn primary" style="width:100%">Restart Quiz</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="credit-footer">
+            Developed by <strong>Phyo Thiha Kyaw (ITPEC b4)</strong>
+        </footer>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
